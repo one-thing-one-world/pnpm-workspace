@@ -1,0 +1,28 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pnpm run --filter '*' start",
+    "clear": "rm -rf package-lock.json && find . -name 'node_modules' -type d -exec rm -rf '{}' + ",
+    "installs": "pnpm i && pnpm run --filter '*' installs",
+    "build": "pnpm run --filter '*' build",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": ["@babel/plugin-syntax-flow","@babel/plugin-transform-react-jsx","@testing-library/dom","typescript"]
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": ">=7.0.0-0 <8.0.0",
+    "@changesets/cli": "^2.26.0",
+    "axios": "^1.3.3"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "total": 6,
+    "workspacePrefix": "/Users/liujuncai/Desktop/workspaces/demo"
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_WORKSPACE_PACKAGE_NOT_FOUND",
+    "err": {
+      "name": "pnpm",
+      "message": "\"utiles\" not found in the workspace",
+      "code": "ERR_PNPM_WORKSPACE_PACKAGE_NOT_FOUND",
+      "stack": "pnpm: \"utiles\" not found in the workspace\n    at /snapshot/dist/pnpm.cjs\n    at Array.map (<anonymous>)\n    at createWorkspaceSpecs (/snapshot/dist/pnpm.cjs)\n    at /snapshot/dist/pnpm.cjs\n    at async Promise.all (index 0)\n    at async recursive (/snapshot/dist/pnpm.cjs)\n    at async handler (/snapshot/dist/pnpm.cjs)\n    at async /snapshot/dist/pnpm.cjs\n    at async run (/snapshot/dist/pnpm.cjs)\n    at async runPnpm (/snapshot/dist/pnpm.cjs)"
+    }
+  }
+}
